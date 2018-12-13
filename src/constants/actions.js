@@ -1,0 +1,22 @@
+// Apps
+export const HOME_GET_FAILED = 'HOME_GET_FAILED';
+export const HOME_GET_REQUEST = 'HOME_GET_REQUEST';
+export const HOME_GET_SUCCESS = 'HOME_GET_SUCCESS';
+export const HOME_RESET = 'HOME_RESET';
+export const HOME_UPDATE_CURRENT_QUERY = 'HOME_UPDATE_CURRENT_QUERY';
+export const HOME_UPDATE_QUERY = 'HOME_UPDATE_QUERY';
+
+// Route
+export const CHANGE_ROUTE = 'CHANGE_ROUTE';
+
+// General
+export const UPDATE_IS_DARK_MODE = 'UPDATE_IS_DARK_MODE';
+export const UPDATE_IS_FULL_SCREEN = 'UPDATE_IS_FULL_SCREEN';
+export const UPDATE_LATEST_TEMPLATE_VERSION = 'UPDATE_LATEST_TEMPLATE_VERSION';
+
+// Preferences
+export const SET_PREFERENCE = 'SET_PREFERENCE';
+
+// App Management
+export const SET_APP = 'SET_APP';
+export const REMOVE_APP = 'REMOVE_APP';
