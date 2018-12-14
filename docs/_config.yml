@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: WebCatalog - Reinvent your Web Workflow
-email: support@getwebcatalog.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://getwebcatalog.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -28,6 +27,5 @@ collections:
 markdown: kramdown
 plugins:
   - jekyll-redirect-from
-  - jekyll-sitemap
 
 google_analytics: UA-124034530-4

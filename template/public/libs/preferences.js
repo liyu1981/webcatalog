@@ -3,10 +3,12 @@ const settings = require('electron-settings');
 const sendToAllWindows = require('../libs/send-to-all-windows');
 
 // scope
-const v = '2018';
+const v = '2018.2';
 
 const defaultPreferences = {
-  showNavigationBar: true,
+  appearance: 'automatic',
+  navigationBar: true,
+  spellChecker: true,
 };
 
 const getPreferences = () => Object.assign({}, defaultPreferences, settings.get(`preferences.${v}`, defaultPreferences));

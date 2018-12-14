@@ -18,9 +18,9 @@ const create = () => {
     y: mainWindowState.y,
     width: mainWindowState.width,
     height: mainWindowState.height,
-    minWidth: 400,
-    minHeight: 700,
-    titleBarStyle: 'hidden',
+    minHeight: 100,
+    title: global.appJson.name,
+    titleBarStyle: global.showSidebar ? 'hidden' : 'default',
     webPreferences: {
       nodeIntegration: true,
     },

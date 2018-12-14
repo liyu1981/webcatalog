@@ -1,4 +1,5 @@
 const {
+  app,
   dialog,
   ipcMain,
   shell,
@@ -77,6 +78,21 @@ const loadListeners = () => {
   ipcMain.on('request-show-edit-workspace-window', (e, id) => {
     editWorkspaceWindow.show(id);
   });
+
+  ipcMain.on('request-show-require-restart-dialog', () => {
+    dialog.showMessageBox(preferencesWindow.get(), {
+      type: 'question',
+      buttons: ['Restart Now', 'Later'],
+      message: 'You need to restart the app for this change to take affect.',
+      cancelId: 1,
+    }, (response) => {
+      if (response === 0) {
+        app.relaunch();
+        app.quit();
+      }
+    });
+  });
+
 
   // Workspaces
   ipcMain.on('get-workspace', (e, id) => {

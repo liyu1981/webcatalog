@@ -10,6 +10,7 @@ const openEmailLinkWithWindow = require('./windows/open-email-link-with');
 const createMenu = require('./libs/create-menu');
 const { getWorkspaces } = require('./libs/workspaces');
 const { addView } = require('./libs/views');
+const { getPreference } = require('./libs/preferences');
 
 const appJson = require('./app.json');
 
@@ -29,6 +30,8 @@ if (!gotTheLock) {
 
   app.on('ready', () => {
     global.appJson = appJson;
+
+    global.showSidebar = getPreference('sidebar');
 
     mainWindow.create();
 

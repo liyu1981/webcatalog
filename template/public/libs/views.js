@@ -19,9 +19,9 @@ const addView = (browserWindow, workspace) => {
 
     const contentSize = browserWindow.getContentSize();
     view.setBounds({
-      x: 68,
+      x: global.showSidebar ? 68 : 0,
       y: 0,
-      width: contentSize[0] - 68,
+      width: global.showSidebar ? contentSize[0] - 68 : contentSize[0],
       height: contentSize[1],
     });
     view.setAutoResize({
@@ -41,9 +41,9 @@ const setActiveView = (browserWindow, id) => {
 
   const contentSize = browserWindow.getContentSize();
   view.setBounds({
-    x: 68,
+    x: global.showSidebar ? 68 : 0,
     y: 0,
-    width: contentSize[0] - 68,
+    width: global.showSidebar ? contentSize[0] - 68 : contentSize[0],
     height: contentSize[1],
   });
   view.setAutoResize({

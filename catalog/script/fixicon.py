@@ -1,3 +1,5 @@
+# Credits: https://github.com/VirgileACM
+
 import sys, PIL, re, os
 from PIL import Image
 import numpy as np

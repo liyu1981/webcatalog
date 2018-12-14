@@ -19,7 +19,7 @@ const create = () => {
     width: mainWindowState.width,
     height: mainWindowState.height,
     minWidth: 500,
-    minHeight: 700,
+    minHeight: 500,
     titleBarStyle: 'hidden',
     webPreferences: {
       nodeIntegration: true,
